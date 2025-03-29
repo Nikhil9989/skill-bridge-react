@@ -1,0 +1,14 @@
+.home-page section {
+  scroll-margin-top: 80px;
+  padding: 5rem 0;
+}
+
+.home-page section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .home-page section {
+    padding: 3rem 0;
+  }
+}
