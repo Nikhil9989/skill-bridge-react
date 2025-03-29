@@ -1,0 +1,143 @@
+.contact-page {
+  padding-top: 80px; /* For fixed header */
+}
+
+.contact-options {
+  padding: 5rem 0;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.option-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.option-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.option-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.option-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.option-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.option-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.option-link:hover {
+  color: #2942cf;
+  text-decoration: underline;
+}
+
+.contact-map {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.map-info {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.map-container {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.map-text {
+  text-align: center;
+  padding: 2rem;
+}
+
+.map-text h3 {
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.map-text p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-options,
+  .contact-map {
+    padding: 4rem 0;
+  }
+  
+  .map-container {
+    height: 300px;
+  }
+  
+  .option-icon {
+    font-size: 2rem;
+  }
+  
+  .map-info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-options,
+  .contact-map {
+    padding: 3rem 0;
+  }
+  
+  .map-container {
+    height: 250px;
+  }
+}
