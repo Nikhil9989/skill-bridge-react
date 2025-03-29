@@ -1,0 +1,194 @@
+.survey-detail-page {
+  padding-top: 80px; /* For fixed header */
+}
+
+.survey-content {
+  padding: 5rem 0;
+}
+
+.survey-intro {
+  margin-bottom: 3rem;
+}
+
+.survey-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+}
+
+.survey-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-question {
+  margin-bottom: 2.5rem;
+}
+
+.form-question label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.radio-options, .checkbox-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.radio-option, .checkbox-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+  margin-right: 0.8rem;
+  width: 18px;
+  height: 18px;
+}
+
+.radio-option label, .checkbox-option label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.form-question select {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form-question textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.form-section {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.form-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-info {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.form-actions button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.loading {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.submission-confirmation {
+  padding: 5rem 0;
+}
+
+.confirmation-message {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-message h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-message p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.confirmation-message button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .survey-content {
+    padding: 3rem 0;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+  
+  .form-question label {
+    font-size: 1.1rem;
+  }
+  
+  .confirmation-message {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .survey-intro p {
+    font-size: 1rem;
+  }
+  
+  .survey-form {
+    padding: 0 1rem;
+  }
+}
