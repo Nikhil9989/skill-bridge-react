@@ -1,0 +1,155 @@
+.dashboard-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.dashboard-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: #666;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.metric-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.chart-container {
+  height: 250px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.metric-card p {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.dashboard-details {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+#key-findings {
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+#key-findings li {
+  margin-bottom: 0.8rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-label {
+  flex: 0 0 180px;
+  font-weight: 600;
+  color: #555;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.progress-value {
+  flex: 0 0 80px;
+  text-align: right;
+  color: #666;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-section {
+    padding: 4rem 0;
+  }
+  
+  .progress-item {
+    flex-wrap: wrap;
+  }
+  
+  .progress-label {
+    flex: 0 0 100%;
+  }
+  
+  .progress-bar {
+    flex: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-section {
+    padding: 3rem 0;
+  }
+  
+  .chart-container {
+    height: 200px;
+  }
+  
+  .dashboard-details {
+    padding: 1.5rem;
+  }
+  
+  .dashboard-details h3 {
+    font-size: 1.3rem;
+  }
+}
