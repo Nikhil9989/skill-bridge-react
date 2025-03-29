@@ -1,0 +1,144 @@
+.interviews-page {
+  padding-top: 80px; /* For fixed header */
+}
+
+.interviews-intro {
+  padding: 5rem 0;
+}
+
+.interviews-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+.interview-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.benefit-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.interview-process {
+  padding: 5rem 0;
+  background-color: #f9f9fa;
+}
+
+.process-steps {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.process-step {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 1rem;
+}
+
+.process-step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.process-step p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .interview-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-steps {
+    flex-wrap: wrap;
+  }
+  
+  .process-step {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .interviews-intro,
+  .interview-process {
+    padding: 4rem 0;
+  }
+  
+  .interviews-intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .interviews-intro,
+  .interview-process {
+    padding: 3rem 0;
+  }
+  
+  .interview-benefits {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-card,
+  .process-step {
+    padding: 1.5rem;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
