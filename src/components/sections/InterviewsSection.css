@@ -1,0 +1,145 @@
+.interviews-section {
+  padding: 5rem 0;
+}
+
+.interview-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.interview-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.interview-text h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--dark-color);
+}
+
+.interview-text ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.interview-text ul li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.interview-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.interview-form h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group select {
+  background-color: white;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2942cf;
+  transform: translateY(-2px);
+}
+
+.form-success {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.form-success p {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.form-success p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .interview-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .interview-text {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .interviews-section {
+    padding: 4rem 0;
+  }
+  
+  .interview-form {
+    padding: 1.5rem;
+  }
+  
+  .interview-form h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .interviews-section {
+    padding: 3rem 0;
+  }
+  
+  .interview-text p,
+  .interview-text ul li {
+    font-size: 0.95rem;
+  }
+  
+  .form-group label {
+    font-size: 0.95rem;
+  }
+}
