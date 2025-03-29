@@ -1,0 +1,174 @@
+.about-page {
+  padding-top: 80px; /* For fixed header */
+}
+
+.page-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/about-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-banner p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-vision {
+  padding: 5rem 0;
+  background-color: #f9f9f9;
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.about-team {
+  padding: 5rem 0;
+}
+
+.team-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin: 0 auto 1.5rem;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.member-role {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.member-bio {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-partners {
+  padding: 5rem 0;
+  background-color: #f9f9f9;
+}
+
+.partners-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.partner-logo {
+  height: 120px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 992px) {
+  .team-members,
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    padding: 4rem 0;
+  }
+  
+  .page-banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-vision,
+  .about-team,
+  .about-partners {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-members,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+  
+  .page-banner p,
+  .vision-content p,
+  .team-intro,
+  .partners-intro {
+    font-size: 1rem;
+  }
+  
+  .about-vision,
+  .about-team,
+  .about-partners {
+    padding: 3rem 0;
+  }
+}
