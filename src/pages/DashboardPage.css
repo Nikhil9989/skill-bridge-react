@@ -1,0 +1,147 @@
+.dashboard-page {
+  padding-top: 80px; /* For fixed header */
+}
+
+.dashboard-intro {
+  padding: 5rem 0;
+}
+
+.dashboard-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+.methodology {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.methodology-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.methodology-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.methodology-table table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.methodology-table th {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: left;
+  padding: 1rem;
+}
+
+.methodology-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.methodology-table tr:last-child td {
+  border-bottom: none;
+}
+
+.future-updates {
+  padding: 5rem 0;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.update-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.update-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.update-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.update-card p {
+  color: #666;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.update-timeline {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background-color: var(--light-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+  .methodology-content,
+  .updates-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-intro,
+  .methodology,
+  .future-updates {
+    padding: 4rem 0;
+  }
+  
+  .dashboard-intro p,
+  .methodology-text p {
+    font-size: 1rem;
+  }
+  
+  .methodology-table {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-intro,
+  .methodology,
+  .future-updates {
+    padding: 3rem 0;
+  }
+  
+  .update-card {
+    padding: 1.5rem;
+  }
+  
+  .update-card h3 {
+    font-size: 1.2rem;
+  }
+}
