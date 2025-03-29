@@ -1,0 +1,87 @@
+.surveys-page {
+  padding-top: 80px; /* For fixed header */
+}
+
+.surveys-intro {
+  padding: 5rem 0;
+}
+
+.surveys-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+.surveys-faq {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.faq-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .surveys-intro,
+  .surveys-faq {
+    padding: 4rem 0;
+  }
+  
+  .surveys-intro p {
+    font-size: 1rem;
+  }
+  
+  .faq-item {
+    padding: 1.5rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .surveys-intro,
+  .surveys-faq {
+    padding: 3rem 0;
+  }
+  
+  .faq-item p {
+    font-size: 0.95rem;
+  }
+}
